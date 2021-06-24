@@ -1,0 +1,26 @@
+{
+  "name": "robots",
+  "version": "1.0.0",
+  "description": "Information and mantenaince of Software Robots.",
+  "main": "robots.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moodRobotics/robots.git"
+  },
+  "keywords": [
+    "robots",
+    "mood",
+    "robotics",
+    "GAP",
+    "gap"
+  ],
+  "author": " (c)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/moodRobotics/robots/issues"
+  },
+  "homepage": "https://github.com/moodRobotics/robots#readme"
+}
