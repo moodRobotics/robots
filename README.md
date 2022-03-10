@@ -16,7 +16,21 @@ This work with the GAP protocols for Robot design. The Robot may inform of it ac
 
 ## installation
 
+´´´bash
 npm install moodrobotics/robots
+´´´
+
+create file *config.js*
+´´´javascript
+exports.robotSetup = {
+    name: "",
+    version: "",
+    host: 'roberta.tolentinoabogados.com',
+    port: 1881,
+    path: '/robot',
+    method: 'POST',
+};
+´´´
 
 ## use
 
