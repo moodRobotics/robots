@@ -16,12 +16,13 @@ This work with the GAP protocols for Robot design. The Robot may inform of it ac
 
 ## installation
 
-´´´bash
+```bash
 npm install moodrobotics/robots
-´´´
+```
 
 create file *config.js*
-´´´javascript
+
+```javascript
 exports.robotSetup = {
     name: "",
     version: "",
@@ -30,8 +31,23 @@ exports.robotSetup = {
     path: '/robot',
     method: 'POST',
 };
-´´´
+exports.robotBouncer = "https://xxx.fred.sensetecnic.com/api/public/mqtt"
+```
 
 ## use
 
-create *config.js* file and write the installation info.
+create *testfile.js* file and write the installation info.
+
+```javascript
+const config = require('./config.js')
+const robot = require('robots-gap')
+const name = 'MyApp'
+const version = '0.0.1a'
+const robotconf = config.robotSetup
+robotconf.name = name
+robotconf.version = version
+
+//Init program
+robot.sendMQTT(config.robotBouncer,topic, 'start')
+robot.status(robotconf, robot.statusdata[0],"iniciando", `Iniciando Robot ${app}.`)
+```
